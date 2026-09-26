@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Texas Immunotherapy Companies</title>
+<meta name="description" content="Directory of immunotherapy companies based in Texas: cell therapies, antibodies, innate immune agonists and immunomodulators.">
+<style>
+  :root {
+    --bg: #f7f6f2;
+    --surface: #ffffff;
+    --text: #1d1d1b;
+    --muted: #62605a;
+    --border: #e3e0d8;
+    --accent: #b5462b;
+    --accent-soft: #f6e4dc;
+    --chip: #efece5;
+    --chip-active-bg: #1d1d1b;
+    --chip-active-text: #ffffff;
+    --warn: #8a5a00;
+    --warn-soft: #fbefd2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151514;
+      --surface: #1f1f1d;
+      --text: #efede7;
+      --muted: #a29f97;
+      --border: #34332f;
+      --accent: #e98a6b;
+      --accent-soft: #3a2721;
+      --chip: #2a2927;
+      --chip-active-bg: #efede7;
+      --chip-active-text: #151514;
+      --warn: #f1c26b;
+      --warn-soft: #3a3020;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #151514; --surface: #1f1f1d; --text: #efede7; --muted: #a29f97;
+    --border: #34332f; --accent: #e98a6b; --accent-soft: #3a2721; --chip: #2a2927;
+    --chip-active-bg: #efede7; --chip-active-text: #151514; --warn: #f1c26b; --warn-soft: #3a3020;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 40px 16px 64px; }
+  header h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.15; margin: 0 0 8px; letter-spacing: -0.02em; }
+  header p { color: var(--muted); max-width: 70ch; margin: 0; }
+  .eyebrow { color: var(--accent); font-weight: 600; font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px; }
+
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 28px 0; }
+  .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; }
+  .stat b { display: block; font-size: 1.6rem; line-height: 1.2; }
+  .stat span { color: var(--muted); font-size: .85rem; }
+
+  .controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 10px; }
+  .controls input {
+    flex: 1 1 240px; min-width: 0; padding: 10px 14px; border-radius: 10px;
+    border: 1px solid var(--border); background: var(--surface); color: var(--text); font: inherit;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+  .chips .label { color: var(--muted); font-size: .8rem; margin-right: 4px; align-self: center; min-width: 64px; }
+  .chip {
+    border: 0; background: var(--chip); color: var(--text); border-radius: 999px;
+    padding: 5px 12px; font: inherit; font-size: .85rem; cursor: pointer;
+  }
+  .chip[aria-pressed="true"] { background: var(--chip-active-bg); color: var(--chip-active-text); }
+  .count { color: var(--muted); font-size: .85rem; margin: 14px 0 12px; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
+    padding: 18px; display: flex; flex-direction: column; gap: 8px;
+  }
+  .card h3 { margin: 0; font-size: 1.1rem; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px; font-size: .78rem; }
+  .tag { background: var(--chip); border-radius: 6px; padding: 2px 8px; color: var(--muted); }
+  .tag.mod { background: var(--accent-soft); color: var(--accent); }
+  .card p { margin: 0; font-size: .93rem; }
+  .card .focus { color: var(--muted); font-size: .85rem; }
+  .card .note { background: var(--warn-soft); color: var(--warn); font-size: .8rem; padding: 6px 10px; border-radius: 8px; }
+  .card a { color: var(--accent); font-size: .85rem; margin-top: auto; text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+  .empty { color: var(--muted); padding: 24px 0; }
+
+  section.eco { margin-top: 48px; }
+  section.eco h2 { font-size: 1.4rem; margin: 0 0 12px; }
+  .eco-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  .eco-list div { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 14px 16px; font-size: .9rem; }
+  .eco-list b { display: block; margin-bottom: 4px; }
+
+  footer { margin-top: 40px; color: var(--muted); font-size: .8rem; border-top: 1px solid var(--border); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Industry directory</div>
+    <h1>Immunotherapy Companies in Texas</h1>
+    <p>Biotech companies in Texas that develop therapies using the immune system, including engineered T cells, antibodies, innate-immune agonists and regulatory-T-cell approaches. Most are clustered around the Texas Medical Center in Houston, UT Southwestern in Dallas, and Austin.</p>
+  </header>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="controls">
+    <input id="q" type="search" placeholder="Search by name, target, disease…" aria-label="Search companies">
+  </div>
+  <div class="chips" id="cityChips"><span class="label">City</span></div>
+  <div class="chips" id="modChips"><span class="label">Modality</span></div>
+
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+
+  <section class="eco">
+    <h2>The Texas immunotherapy ecosystem</h2>
+    <div class="eco-list">
+      <div><b>MD Anderson Cancer Center</b>Houston. One of the largest cancer immunotherapy research centers in the world, and the source of several spinouts (e.g. ImmunoGenesis) and licensed CAR-NK programs.</div>
+      <div><b>Baylor College of Medicine</b>Houston. Its Center for Cell and Gene Therapy (with Texas Children's and Houston Methodist) is the origin of Marker, March Bio and other T-cell therapy companies.</div>
+      <div><b>UT Southwestern</b>Dallas. Research on innate immunity and cGAS-STING that led to companies such as ImmuneSensor.</div>
+      <div><b>CPRIT</b>The Cancer Prevention &amp; Research Institute of Texas funds cancer research and gives company-formation grants, which draw many oncology startups to the state.</div>
+      <div><b>TMC Innovation / Helix Park</b>Houston. Texas Medical Center's accelerator and life-science campus for early-stage biotech.</div>
+    </div>
+  </section>
+
+  <footer>
+    Compiled from public information as of 2026. Pipelines, stages, tickers and corporate status change often, especially for small-cap biotechs, so check each company's website and recent SEC filings before relying on this list. Not investment advice.
+  </footer>
+</div>
+
+<script>
+const companies = [
+  { name: "Immatics (US operations)", city: "Houston", modality: "TCR-T cell therapy",
+    desc: "Develops TCR-based cancer immunotherapies. Its lead program, IMA203, is a PRAME-targeted TCR-T therapy for melanoma, and it also has a pipeline of TCR bispecifics (TCER®). The company is headquartered in Germany and runs its main US R&D and manufacturing in Houston.",
+    focus: "Solid tumors · melanoma", type: "Public · Nasdaq: IMTX", url: "https://immatics.com" },
+  { name: "Marker Therapeutics", city: "Houston", modality: "T-cell therapy",
+    desc: "Makes non-engineered multi-tumor-associated-antigen (multiTAA) specific T cells that recognize several tumor antigens at once. It came out of Baylor College of Medicine.",
+    focus: "Lymphoma · hematologic & solid tumors", type: "Public · Nasdaq: MRKR", url: "https://markertherapeutics.com" },
+  { name: "March Biosciences", city: "Houston", modality: "CAR-T cell therapy",
+    desc: "Develops CD5-directed CAR-T cell therapy (MB-105) for T-cell lymphomas and leukemias, based on technology from Baylor College of Medicine.",
+    focus: "T-cell lymphoma", type: "Private", url: "https://marchbio.com" },
+  { name: "Kiromic BioPharma", city: "Houston", modality: "Gamma-delta T-cell therapy",
+    desc: "Develops allogeneic, non-engineered gamma-delta T-cell therapy (Deltacel) for solid tumors, including non-small cell lung cancer.",
+    focus: "NSCLC · solid tumors", type: "Public (small-cap)", url: "https://kiromic.com",
+    note: "Has had financial difficulties. Check its current status." },
+  { name: "Coya Therapeutics", city: "Houston", modality: "Treg immunomodulation",
+    desc: "Develops biologics and combination therapies that boost regulatory T-cell (Treg) function to reduce harmful inflammation. Its lead, COYA 302, combines low-dose IL-2 with CTLA4-Ig.",
+    focus: "ALS · neurodegenerative disease", type: "Public · Nasdaq: COYA", url: "https://coyatherapeutics.com" },
+  { name: "Cellenkos", city: "Houston", modality: "Treg cell therapy",
+    desc: "Makes cord-blood-derived regulatory T-cell therapies for inflammatory and autoimmune conditions.",
+    focus: "Autoimmune · inflammatory disease", type: "Private", url: "https://cellenkosinc.com" },
+  { name: "ImmunoGenesis", city: "Houston", modality: "Antibody / innate agonist",
+    desc: "An MD Anderson spinout developing immunotherapies meant to make immunologically \"cold\" tumors respond, including a dual PD-L1/PD-L2 antibody and a STING agonist.",
+    focus: "Checkpoint-resistant solid tumors", type: "Private", url: "https://immunogenesis.com" },
+  { name: "Allterum Therapeutics", city: "Houston", modality: "Monoclonal antibody",
+    desc: "Develops an anti-IL-7 receptor-alpha antibody for IL-7R-driven cancers, mainly acute lymphoblastic leukemia.",
+    focus: "ALL · T-cell leukemia", type: "Private", url: "https://allterum.com" },
+  { name: "Instil Bio", city: "Dallas", modality: "Bispecific antibody",
+    desc: "Started out developing TIL cell therapy and now focuses on a PD-L1 × VEGF bispecific antibody for solid tumors.",
+    focus: "Solid tumors", type: "Public · Nasdaq: TIL", url: "https://instilbio.com" },
+  { name: "ImmuneSensor Therapeutics", city: "Dallas", modality: "Innate immune agonist",
+    desc: "A UT Southwestern spinout, based on cGAS-STING pathway discoveries, that develops STING agonists to activate innate anti-tumor immunity.",
+    focus: "Solid tumors", type: "Private", url: "https://immunesensor.com" },
+  { name: "OncoNano Medicine", city: "Southlake (DFW)", modality: "Innate immune agonist",
+    desc: "Uses a pH-sensitive micelle platform. Its programs include ONM-501, a polyvalent STING agonist for immuno-oncology, and pegsitacianine, a tumor-imaging agent.",
+    focus: "Solid tumors", type: "Private", url: "https://onconano.com" },
+  { name: "Shattuck Labs", city: "Austin", modality: "Fusion protein / antibody",
+    desc: "First known for bifunctional ARC® fusion proteins in immuno-oncology, it now develops DR3-targeting antibodies for inflammatory and immune-mediated diseases.",
+    focus: "IBD · immune-mediated disease", type: "Public · Nasdaq: STTK", url: "https://shattucklabs.com" },
+  { name: "XBiotech", city: "Austin", modality: "Monoclonal antibody",
+    desc: "Develops \"True Human\" antibodies cloned from natural human immune responses, targeting inflammation, infectious disease and cancer.",
+    focus: "Inflammation · oncology", type: "Public · Nasdaq: XBIT", url: "https://xbiotech.com" },
+  { name: "Genprex", city: "Austin", modality: "Gene therapy + checkpoint combo",
+    desc: "Develops a non-viral gene therapy (REQORSA®) for lung cancer, tested in combination with immune checkpoint inhibitors.",
+    focus: "NSCLC · SCLC", type: "Public · Nasdaq: GNPX", url: "https://genprex.com" }
+];
+
+const $ = id => document.getElementById(id);
+const cityOf = c => c.city.startsWith("Southlake") ? "Dallas–Fort Worth" : (c.city === "Dallas" ? "Dallas–Fort Worth" : c.city);
+const modGroup = m => /CAR|TCR|T-cell|gamma/i.test(m) ? "Cell therapy"
+  : /Treg/i.test(m) ? "Treg / immunomodulation"
+  : /agonist/i.test(m) ? "Innate agonist"
+  : /antibody|fusion/i.test(m) ? "Antibody / protein"
+  : "Other";
+
+let state = { q: "", city: "All", mod: "All" };
+
+function chips(el, values, key) {
+  ["All", ...values].forEach(v => {
+    const b = document.createElement("button");
+    b.className = "chip"; b.textContent = v;
+    b.setAttribute("aria-pressed", v === "All");
+    b.onclick = () => {
+      state[key] = v;
+      el.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", x === b));
+      render();
+    };
+    el.appendChild(b);
+  });
+}
+
+function render() {
+  const q = state.q.toLowerCase();
+  const list = companies.filter(c =>
+    (state.city === "All" || cityOf(c) === state.city) &&
+    (state.mod === "All" || modGroup(c.modality) === state.mod) &&
+    (!q || [c.name, c.city, c.modality, c.desc, c.focus, c.type].join(" ").toLowerCase().includes(q)));
+  $("count").textContent = `Showing ${list.length} of ${companies.length} companies`;
+  $("grid").innerHTML = list.length ? list.map(c => `
+    <article class="card">
+      <h3>${c.name}</h3>
+      <div class="meta"><span class="tag mod">${c.modality}</span><span class="tag">${c.city}</span><span class="tag">${c.type}</span></div>
+      <p>${c.desc}</p>
+      <div class="focus"><b>Focus:</b> ${c.focus}</div>
+      ${c.note ? `<div class="note">${c.note}</div>` : ""}
+      <a href="${c.url}" target="_blank" rel="noopener">Website ↗</a>
+    </article>`).join("") : `<div class="empty">No companies match these filters.</div>`;
+}
+
+const cities = [...new Set(companies.map(cityOf))];
+const mods = [...new Set(companies.map(c => modGroup(c.modality)))];
+const pub = companies.filter(c => c.type.startsWith("Public")).length;
+$("stats").innerHTML = [
+  [companies.length, "companies listed"],
+  [companies.filter(c => cityOf(c) === "Houston").length, "in Houston"],
+  [companies.filter(c => modGroup(c.modality) === "Cell therapy").length, "cell-therapy developers"],
+  [pub, "publicly traded"]
+].map(([n, l]) => `<div class="stat"><b>${n}</b><span>${l}</span></div>`).join("");
+
+chips($("cityChips"), cities, "city");
+chips($("modChips"), mods, "mod");
+$("q").addEventListener("input", e => { state.q = e.target.value; render(); });
+render();
+</script>
+</body>
+</html>
